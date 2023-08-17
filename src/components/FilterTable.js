@@ -9,10 +9,10 @@ function FilterTable({appliedFilter, filterData}) {
   return (
     
      
-  <div>
+  <div className='mx-5'>
     {console.log("Applied filter-",{appliedFilter})}
-      <Table striped bordered hover>
-      <thead className="table-light">
+      <Table striped bordered hover className='mx-auto '>
+      <thead className="table-light" tdStyle={{  wordWrap: 'break-word' }}>
         <tr>
           <th>{appliedFilter}</th>
           <th>Amount</th>
@@ -21,7 +21,7 @@ function FilterTable({appliedFilter, filterData}) {
       </thead>
       <tbody>
       {filterData && filterData.map((filterAmt) => (
-      <div className='DataTable p-5 m-5' style={{ color:'white'}}>
+      <div className='DataTable px-auto mx-auto' style={{ color:'white'}}>
     
         <tr className="table-light">
           <td>{filterAmt[appliedFilter]}</td>

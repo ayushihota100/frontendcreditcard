@@ -13,6 +13,12 @@ function App() {
 
 	return (
 		<>
+		<div style={{ backgroundImage: "url(http://localhost:3000/screen2.jpg)",
+	 backgroundPosition: 'center',
+	 backgroundSize: 'cover',
+	 backgroundRepeat: 'no-repeat',
+	 width: '100vw',
+	 height: '100vh' }}>
 			<BrowserRouter>
 				<div style={{
 					display: "flex",
@@ -50,6 +56,7 @@ function App() {
 					<Route path='/customerlist/:id' element={<CustomerInfo/>}/>
 				</Routes>
 			</BrowserRouter>
+			</div>
 		</>
 	);
 }
